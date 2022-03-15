@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { Routes, Route } from 'react-router-dom'
+
+import Header from './Header';
+import LandingForm from './LandingForm';
+import DogResults from './DogResults';
+import DogInfo from './DogInfo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <LandingForm />
+
+      <DogResults />
+
+      <DogInfo />
+
+      {/* use Route component to wrap individual Route paths */}
+      <Routes>
+        <Route path="/" element={<LandingForm />} />
+        <Route path="/results" element={<DogResults />} />
+        <Route path="/:dogId" element={<DogInfo />} />
+      </Routes>
+
     </div>
   );
 }
