@@ -49,7 +49,6 @@ function App() {
         {randomDog.length > 0
           ? <DogResults
             dogData={dogs}
-            dogSelection={userSelection}
             randomDogData={randomDog}
           /> : null}
       </main>
