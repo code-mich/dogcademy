@@ -1,21 +1,19 @@
 import './App.scss';
 
 import axios from 'axios';
-import { Routes, Route } from 'react-router-dom'
+
 import { useState, useEffect } from 'react'
 
 import Header from './Header';
 import LandingForm from './LandingForm';
 import DogResults from './DogResults';
-import DogInfo from './DogInfo';
+
 import Footer from './Footer';
 
 function App() {
 
   const [dogs, setDogs] = useState([]);
   const [randomDog, setRandomDog] = useState([])
-
-
 
   // initialize useEffect to run data fetching side effect, running once on page load
 

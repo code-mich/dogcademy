@@ -5,13 +5,16 @@ const DogCard = (props) => {
 
     const ExtraInfo = () => {
         return (
-            <ul className="extraInfo">
-                <li>Breed: {props.breed}</li>
-                <li>Bred for: {props.bredFor}</li>
-                <li>Height: {props.height}</li>
-                <li>Life span: {props.lifeSpan}</li>
-                <li>Temperament: {props.temperament}</li>
-            </ul>
+            <div className="moreInfo">
+
+                <ul className="extraInfo">
+                    <li>Breed: {props.breed}</li>
+                    <li>Bred for: {props.bredFor}</li>
+                    <li>Height: {props.height}</li>
+                    <li>Life span: {props.lifeSpan}</li>
+                    <li>Temperament: {props.temperament}</li>
+                </ul>
+            </div>
 
         )
     }

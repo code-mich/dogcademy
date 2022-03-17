@@ -1,0 +1,26 @@
+  /* DogResults styles */
+  
+  .dogGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .dogCard {
+    display: flex;
+    flex-direction: row;
+    width: calc(30% - 5%);
+    min-height: 30vh;
+    padding: 2.5%;
+    border: 2px solid black;
+    margin: 2%;
+  }
+  .expandedDogCard {
+    width: 100%;
+  }
+  
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+}
