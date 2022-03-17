@@ -5,7 +5,7 @@ const Header = () => {
         <header>
             <div className="wrapper">
                 <Link to={'/'}>
-                    <h1>many many doggos</h1>
+                    <h1>Dogcademy</h1>
                 </Link>
             </div>
         </header>
