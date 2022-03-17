@@ -49,6 +49,15 @@
     background-color: black;
     color: white;
     text-align: center;
+    padding: 2.5%;
+    a {
+      color: white;
+      transition: all 0.5s;
+      &:hover,
+      &:focus {
+        color: peachpuff;
+      }
+    }
   }
 
   button {

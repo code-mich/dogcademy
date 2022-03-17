@@ -10,6 +10,7 @@ const LandingForm = (props) => {
                     </h2>
                     <p>Click on the button below to see a random selection of dogs. See one you like? Click on the learn more button for some good ole dog facts</p>
                     <button
+                        className="randomizeButton"
                         onClick={() => {
                             props.randomize(props.dogData);
 

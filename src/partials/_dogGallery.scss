@@ -1,26 +1,50 @@
   /* DogResults styles */
-  
-  .dogGallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .dogCard {
-    display: flex;
-    flex-direction: row;
-    width: calc(30% - 5%);
-    min-height: 30vh;
-    padding: 2.5%;
-    border: 2px solid black;
-    margin: 2%;
-  }
-  .expandedDogCard {
-    width: 100%;
-  }
-  
-.mainInfo {
-  display: flex;
-  flex-direction: column;
+.results {
+    .dogGallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .dogCard {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 5%);
+        padding: 2.5%;
+        border: 2px solid grey;
+        margin: 2%;
+    }
+    .expandedDogCard {
+        width: 100%;
+    }
+    
+    .mainInfo {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        justify-content: space-evenly;
+    }
+
+    h3 {
+        margin-top: 5%;
+    }
+    .imgContainer {
+        margin: 5% auto;
+    }
+    .learnMore {
+        margin: 5% 0;
+    }
+    .extraInfo {
+        h4 {
+            padding: 2.5% 0;
+        }
+        .shortText {
+            display: flex;
+            flex-direction: row;
+            p {
+                padding: 2.5%;
+            }
+        }
+    }
 }

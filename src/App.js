@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react'
 import Header from './Header';
 import LandingForm from './LandingForm';
 import DogResults from './DogResults';
-
 import Footer from './Footer';
 
 function App() {
@@ -33,7 +32,7 @@ function App() {
   }, []);
 
   const dogRandomizer = (array) => {
-    setRandomDog(array.sort(() => Math.random() - Math.random()).slice(0, 9))
+    setRandomDog(array.sort(() => Math.random() - Math.random()).slice(0, 10))
   }
 
   return (
