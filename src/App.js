@@ -13,7 +13,6 @@ import Footer from './Footer';
 function App() {
 
   const [dogs, setDogs] = useState([]);
-  const [selectedDog, setSelectedDog] = useState([]);
   const [randomDog, setRandomDog] = useState([])
 
 
@@ -21,7 +20,6 @@ function App() {
   // initialize useEffect to run data fetching side effect, running once on page load
 
   useEffect(() => {
-
 
     // make an API request with axios
     axios({
@@ -36,25 +34,14 @@ function App() {
 
   }, []);
 
-  // const dogRandomizer = (dogsArray) => {
-  //   setRandomDog((dogsArray[Math.floor(Math.random() * dogs.length)
-  //   ]))
-  // }
-
   const dogRandomizer = (array) => {
     setRandomDog(array.sort(() => Math.random() - Math.random()).slice(0, 9))
   }
 
-  const userSelection = (selection) => {
-    setSelectedDog(selection)
-    // console.log(selectedDog)
-  }
-
-
   return (
     <div className="App">
       <Header />
-      {console.log(randomDog)}
+
       <main>
         <LandingForm
           dogData={dogs}
@@ -67,30 +54,9 @@ function App() {
             dogSelection={userSelection}
             randomDogData={randomDog}
           /> : null}
-
-        {/* <DogResults
-          dogData={dogs}
-          dogSelection={userSelection}
-          randomDog={dogRandomizer}
-        /> */}
-        {/* use Route component to wrap individual Route paths */}
-        {/* <Routes>
-          <Route path="/" element={
-            <LandingForm
-              dogData={dogs}
-              randomDog={dogRandomizer} />} />
-          <Route path="/results" element={
-            <DogResults
-              dogData={dogs}
-              dogSelection={userSelection}
-              randomDog={dogRandomizer}
-            />} />
-          <Route path="/:dogId" element={
-            <DogInfo />} />
-        </Routes> */}
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );

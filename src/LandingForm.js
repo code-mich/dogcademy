@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom'
 
 const LandingForm = (props) => {
-
 
     return (
         <section className="home" id="home">
@@ -25,7 +23,6 @@ const LandingForm = (props) => {
 
         </section>
 
-        // for now, have a button to randomize a selection of dogs
     )
 }
 

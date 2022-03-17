@@ -1,15 +1,11 @@
 import DogCard from './DogCard'
 
 const DogResults = (props) => {
-    console.log(props)
-    // props.randomDog(props.dogData)
-
 
     return (
 
         <section className="results" id="results">
             <div className="wrapper">
-                <h2>look there are dogs</h2>
                 <ul className="dogGallery">
                     {
                         props.randomDogData.map((randomDog) => {
