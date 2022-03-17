@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
-
 import DogCard from './DogCard'
 
 const DogResults = (props) => {
     console.log(props)
+    // props.randomDog(props.dogData)
 
 
     return (
@@ -13,18 +12,17 @@ const DogResults = (props) => {
                 <h2>look there are dogs</h2>
                 <ul className="dogGallery">
                     {
-                        props.dogData.map((dogData) => {
+                        props.randomDogData.map((randomDog) => {
                             return (
                                 <DogCard
-                                    id={dogData.id}
-                                    name={dogData.name}
-                                    image={dogData.image.url}
-                                    breed={dogData.breed_group}
-                                    bredFor={dogData.bred_for}
-                                    height={dogData.height.metric}
-                                    lifeSpan={dogData.life_span}
-                                    temperament={dogData.temperament}
-                                    dogSelection={props.dogSelection}
+                                    key={randomDog.id}
+                                    name={randomDog.name}
+                                    image={randomDog.image.url}
+                                    breed={randomDog.breed_group}
+                                    bredFor={randomDog.bred_for}
+                                    height={randomDog.height.metric}
+                                    lifeSpan={randomDog.life_span}
+                                    temperament={randomDog.temperament}
                                 />
                             )
                         })

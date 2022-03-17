@@ -60,16 +60,24 @@
     justify-content: space-evenly;
   }
   
-  li {
+  .dogCard {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: calc(30% - 5%);
     min-height: 30vh;
     padding: 2.5%;
     border: 2px solid black;
     margin: 2%;
   }
+  .expandedDogCard {
+    width: 100%;
+  }
   
+.mainInfo {
+  display: flex;
+  flex-direction: column;
+}
+
   button {
     margin: 0 auto;
     padding: 2.5%;
